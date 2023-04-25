@@ -6,7 +6,7 @@ export default defineConfig({
   description: "All around of DinghyGo",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: 'img/logo.png',
+    logo: './img/logo.png',
     siteTitle: 'My Title',
     nav: [
       { text: 'Home', link: '/' },
