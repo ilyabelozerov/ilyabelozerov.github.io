@@ -29,8 +29,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You'
+      message: 'DISCLAIMER: It\'s not the official site of DinghyGo.',
+      copyright: 'Copyright © 2023-present by Babuin Studio'
     },
     
     search: {
