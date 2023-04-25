@@ -1,3 +1,3 @@
-Dinghygo Fan Website
+# Dinghygo Fan Website
 
 Powered by Vitepress
