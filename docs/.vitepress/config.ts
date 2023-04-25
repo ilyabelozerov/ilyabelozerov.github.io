@@ -6,6 +6,8 @@ export default defineConfig({
   description: "All around of DinghyGo",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: 'img/logo.png',
+    siteTitle: 'My Title',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
@@ -22,7 +24,19 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+      { icon: 'youtube', link: 'https://www.youtube.com/user/dinghygo' },
+      { icon: 'instagram', link: 'https://www.instagram.com' }
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You'
+    },
+    
+    search: {
+      provider: 'local'
+    }
+  },
+
+  lastUpdated: true
 })

@@ -6,6 +6,9 @@ hero:
   name: "DinghyGo Fan Blog"
   text: "All around of DinghyGo"
   tagline: My great project tagline
+  image:
+    src: /img/logo.png
+    alt: myLogo
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,11 +18,16 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
+  - icon: 😀
+    title: About me
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - icon: 📦
+    title: Unpacking
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - icon: ⛵
+    title: Sailing
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: www.google.com
+    linkText: Something is here
 ---
 
