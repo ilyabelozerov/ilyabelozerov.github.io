@@ -2,18 +2,18 @@
 
 Places where I have been (or plan to be) with my DinghyGo boat.
 
-
-  <l-map ref="map" v-model:zoom="zoom" :center="[47.41322, -1.219482]">
-    <l-tile-layer
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      layer-type="base"
-      name="OpenStreetMap"
-    ></l-tile-layer>
-  </l-map>
-
+<l-map ref="map" v-model:zoom="zoom" :center="[47.41322, -1.219482]">
+  <l-tile-layer
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    layer-type="base"
+    name="OpenStreetMap"
+  ></l-tile-layer>
+</l-map>
 
 <script lang="ts">
-import "leaflet/dist/leaflet.css";
+import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
+import 'leaflet/dist/leaflet.css';
+
 import { LMap, LTileLayer, LMarker, LIcon } from "@vue-leaflet/vue-leaflet";
 
 export default {
