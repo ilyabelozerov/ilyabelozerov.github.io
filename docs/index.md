@@ -20,14 +20,15 @@ hero:
 features:
   - icon: 😀
     title: About me
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - icon: 📦
-    title: Unpacking
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Welcome to my website! My name is Ilya
+  - icon: 🗺️
+    title: Map
+    details: The places which I visited with my DinghyGo or plan to visit
+    link: /map
+    linkText: Go to map    
   - icon: ⛵
     title: Sailing
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: www.google.com
-    linkText: Something is here
+    details: My trips under the sail or with a motor
 ---
 
+[Lake Garda](/planned/lake-garda)

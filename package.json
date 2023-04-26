@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.9.0",
+    "leaflet": "^1.9.3",
     "vitepress": "^1.0.0-alpha.74"
   },
   "scripts": {
