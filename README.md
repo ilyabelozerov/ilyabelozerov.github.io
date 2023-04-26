@@ -1,6 +1,6 @@
 # My personal website
 
 GitHub Pages for ilyabelozerov
-Powered by Vitepress
+Powered by Vuepress
 
 Currently used as DinghyGo Fan Website

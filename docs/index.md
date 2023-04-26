@@ -1,34 +1,25 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
-hero:
-  name: "DinghyGo Fan Blog"
-  text: "All around of DinghyGo"
-  tagline: My great project tagline
-  image:
-    src: /img/logo.png
-    alt: myLogo
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
+home: true
+heroImage: /boatDrawing.jpg
+heroAlt: dinghygo
+heroText: My DinghyGo
+actions:
+  - text: Get Started
+    link: /guide/getting-started.html
+    type: primary
+  - text: Introduction
+    link: /guide/
+    type: secondary
 features:
-  - icon: 😀
-    title: About me
-    details: Welcome to my website! My name is Ilya
-  - icon: 🗺️
-    title: Map
-    details: The places which I visited with my DinghyGo or plan to visit
-    link: /map
-    linkText: Go to map    
-  - icon: ⛵
-    title: Sailing
-    details: My trips under the sail or with a motor
+  - title: Simplicity First
+    details: Minimal setup with markdown-centered project structure helps you focus on writing.
+  - title: Vue-Powered
+    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
+  - title: Performant
+    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+footer: "DISCLAIMER: this is not an official website of DinghyGo"
 ---
 
-[Lake Garda](/planned/lake-garda)
+[Map](map.md)
+
+[Links](links.md)
