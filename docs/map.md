@@ -2,51 +2,47 @@
 
 Places where I have been (or plan to be) with my DinghyGo boat.
 
-<l-map ref="map" v-model:zoom="zoom" :center="[47.41322, -1.219482]">
-  <l-tile-layer
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    layer-type="base"
-    name="OpenStreetMap"
-  ></l-tile-layer>
-</l-map>
+<div style="height: 500px; width: 100%">
+  <l-map :zoom="zoom" :center="center">
+    <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+    <l-marker :lat-lng="markerLatLng"></l-marker>
+  </l-map>
+</div>
 
 <script lang="ts">
-import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
-import 'leaflet/dist/leaflet.css';
 
-import { LMap, LTileLayer, LMarker, LIcon } from "@vue-leaflet/vue-leaflet";
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import { LMap, LTileLayer, LMarker } from 'vue-leaflet';
+
+import markerIconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
+import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
+
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIconRetinaUrl,
+  iconUrl: markerIconUrl,
+  shadowUrl: markerShadowUrl,
+});
+
+import { LMap, LTileLayer, LMarker } from "@vue-leaflet/vue-leaflet";
 
 export default {
-  Default: true,
   components: {
     LMap,
     LTileLayer,
     LMarker,
-    LIcon,
   },
   data() {
-      return {
-        zoom: 8,
-        iconWidth: 21,
-        iconHeight: 42,
-      };
-    },
-    computed: {
-      iconUrl() {
-        return `https://placekitten.com/${this.iconWidth}/${this.iconHeight}`;
-      },
-      iconSize(): L.PointExpression {
-        return [this.iconWidth, this.iconHeight];
-      },
-    },
-    methods: {
-      changeIcon() {
-        this.iconWidth += 1;
-        if (this.iconWidth > this.iconHeight) {
-          this.iconWidth = Math.floor(this.iconHeight / 2);
-        }
-      },
-    },
-  };
+    return {
+      zoom: 13,
+      center: [47.41322, -1.219482],
+      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+      markerLatLng: [47.41322, -1.219482],
+    };
+  },
+};
 //Further here: https://github.com/vue-leaflet/vue-leaflet
 </script>
