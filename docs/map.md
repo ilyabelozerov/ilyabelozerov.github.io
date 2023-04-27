@@ -3,7 +3,7 @@
 Places where I have been (or plan to be) with my DinghyGo boat.
 
 <div style="height: 500px; width: 100%">
-  <l-map :zoom="zoom" :center="center">
+  <l-map :useGlobalLeaflet="false" :zoom="zoom" :center="center">
     <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
     <l-marker :lat-lng="markerLatLng"></l-marker>
   </l-map>
@@ -11,21 +11,7 @@ Places where I have been (or plan to be) with my DinghyGo boat.
 
 <script lang="ts">
 
-import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { LMap, LTileLayer, LMarker } from 'vue-leaflet';
-
-import markerIconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
-import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
-import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
-
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIconRetinaUrl,
-  iconUrl: markerIconUrl,
-  shadowUrl: markerShadowUrl,
-});
-
 import { LMap, LTileLayer, LMarker } from "@vue-leaflet/vue-leaflet";
 
 export default {
