@@ -30,9 +30,10 @@ Places where I have been (or plan to be) with my DinghyGo boat.
   </l-map>
 </div>
 
-### Markers color meaning:
-- :blue_heart: - Trip report
-- :green_heart: - Planned trip
+**Markers color meaning:**
+
+:blue_heart: - Trip report<br/>
+:green_heart: - Planned trip<br/>
 
 <script lang="ts">
 
