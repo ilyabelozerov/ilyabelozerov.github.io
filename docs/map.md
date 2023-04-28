@@ -3,25 +3,36 @@
 Places where I have been (or plan to be) with my DinghyGo boat.
 
 <div style="height: 500px; width: 100%">
-  <l-map :useGlobalLeaflet="false" :zoom="zoom" :center="center">
-    <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-      <l-marker v-for="page in plannedPages" :lat-lng="page.frontmatter.coordinates">
-        <l-icon :icon-url="iconUrl" :icon-size="iconSize" />
-        <l-popup>
-          <router-link :to="page.path">
-            {{ page.title }}
-          </router-link>
-        </l-popup>
-      </l-marker>
-      <l-marker v-for="page in tripsPages" :lat-lng="page.frontmatter.coordinates">
-        <l-popup>
-          <router-link :to="page.path">
-            {{ page.title }}
-          </router-link>
-        </l-popup>
-      </l-marker>      
+  <l-map :useGlobalLeaflet="false" 
+         v-model="zoom"
+         v-model:zoom="zoom" 
+         :center="center">
+    <l-tile-layer :url="url"  
+                  :attribution="attribution" 
+                  layer-type="base"
+                  name="OpenStreetMap">
+    </l-tile-layer>
+    <l-marker v-for="page in plannedPages" :lat-lng="page.frontmatter.coordinates">
+      <l-icon :icon-url="iconUrl" :icon-size="iconSize" />
+      <l-popup>
+        <router-link :to="page.path">
+          {{ page.title }}
+        </router-link>
+      </l-popup>
+    </l-marker>
+    <l-marker v-for="page in tripsPages" :lat-lng="page.frontmatter.coordinates">
+      <l-popup>
+        <router-link :to="page.path">
+          {{ page.title }}
+        </router-link>
+      </l-popup>
+    </l-marker>      
   </l-map>
 </div>
+
+### Markers color meaning:
+- :blue_heart: - Trip report
+- :green_heart: - Planned trip
 
 <script lang="ts">
 
@@ -55,10 +66,9 @@ export default {
     },
     iconSize(): L.PointExpression {
       return [25, 40];
-    },
-  }  
+    }
+  } 
 };
-
 
 //Further here: https://github.com/vue-leaflet/vue-leaflet
 </script>
