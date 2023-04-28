@@ -5,30 +5,38 @@ Places where I have been (or plan to be) with my DinghyGo boat.
 <div style="height: 500px; width: 100%">
   <l-map :useGlobalLeaflet="false" :zoom="zoom" :center="center">
     <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-      <l-marker v-for="page in pages" :lat-lng="page.frontmatter.coordinates">
+      <l-marker v-for="page in plannedPages" :lat-lng="page.frontmatter.coordinates">
+        <l-icon :icon-url="iconUrl" :icon-size="iconSize" />
         <l-popup>
           <router-link :to="page.path">
             {{ page.title }}
           </router-link>
         </l-popup>
       </l-marker>
+      <l-marker v-for="page in tripsPages" :lat-lng="page.frontmatter.coordinates">
+        <l-popup>
+          <router-link :to="page.path">
+            {{ page.title }}
+          </router-link>
+        </l-popup>
+      </l-marker>      
   </l-map>
 </div>
 
 <script lang="ts">
 
 import 'leaflet/dist/leaflet.css';
-import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
-import { usePages } from '@temp/planned'
-
-console.log(usePages());
+import { LMap, LTileLayer, LMarker, LPopup, LIcon } from "@vue-leaflet/vue-leaflet";
+import { usePages as plannedPages } from '@temp/planned'
+import { usePages as tripsPages } from '@temp/trips'
 
 export default {
   components: {
     LMap,
     LTileLayer,
     LMarker,
-    LPopup
+    LPopup,
+    LIcon
   },
   data() {
     return {
@@ -37,9 +45,18 @@ export default {
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
       markerLatLng: [47.41322, -1.219482],
-      pages: usePages()
+      plannedPages: plannedPages(),
+      tripsPages: tripsPages()
     };
-  }
+  },
+  computed: {
+    iconUrl() {
+      return 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png';
+    },
+    iconSize(): L.PointExpression {
+      return [25, 40];
+    },
+  }  
 };
 
 
