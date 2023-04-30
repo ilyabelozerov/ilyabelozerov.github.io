@@ -52,7 +52,7 @@ export default {
   },
   data() {
     return {
-      zoom: 6,
+      zoom: 5,
       center: [49.41220, 8.70995],
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
