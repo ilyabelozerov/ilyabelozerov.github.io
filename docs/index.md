@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /boatDrawing.jpg
+heroImage: /boatDrawing.png
 heroAlt: dinghygo
 heroText: My DinghyGo
 actions:
@@ -10,7 +10,7 @@ actions:
   - text: Boat
     link: /guide/
     type: secondary
-  - text: 🗺 Map
+  - text: Map
     link: /map
     type: secondary
 footer: "DISCLAIMER: this is not an official website of DinghyGo"
