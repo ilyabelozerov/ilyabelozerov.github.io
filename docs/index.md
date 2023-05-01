@@ -8,7 +8,7 @@ actions:
     link: /trips/testTrip.md
     type: primary
   - text: Boat
-    link: /guide/
+    link: /boat/unpacking-375.md
     type: secondary
   - text: Map
     link: /map
