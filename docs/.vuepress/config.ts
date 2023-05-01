@@ -27,7 +27,25 @@ export default defineUserConfig({
       },
       {
         text: 'Planned',
-        children: ['/planned/lake-garda.md', '/planned/lake-erlichsee.md'],
+        children: [
+          '/planned/bodensee.md',
+          '/planned/calanques.md',
+          '/planned/croatia.md',
+          '/planned/flensburg.md',
+          '/planned/gibraltar.md',
+          '/planned/lake-bled.md',
+          '/planned/lake-brienz.md',
+          '/planned/lake-chiemsee.md',
+          '/planned/lake-como.md',
+          '/planned/lake-garda.md', 
+          '/planned/lake-erlichsee.md',
+          '/planned/lake-geneve.md',
+          '/planned/lake-tavatui.md',
+          '/planned/lake-trauensee.md',
+          '/planned/portovenere.md',
+          '/planned/santorini.md',
+          '/planned/sardinia.md'
+        ],
       },      
       {
         text: 'Boat',
