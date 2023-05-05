@@ -1,4 +1,4 @@
-import { defineUserConfig } from 'vuepress'
+import { defineUserConfig, SidebarGroup } from 'vuepress'
 import { viteBundler } from 'vuepress'
 import { usePagesPlugin } from 'vuepress-plugin-use-pages'
 import { defaultTheme } from 'vuepress'
@@ -46,13 +46,24 @@ export default defineUserConfig({
           '/planned/santorini.md',
           '/planned/sardinia.md'
         ],
-      },      
+      },   
       {
         text: 'Boat',
-        children: ['/boat/unpacking-375.md'],
+        children: [
+          '/boat/unpacking-375.md',
+          '/boat/mainsheet-cleat.md',
+          '/boat/jibcleat.md',
+          '/boat/tiller-extension.md',
+          '/boat/ladder.md',
+          '/boat/e-motor.md',
+          '/boat/bimini.md',
+          '/boat/cup-holders.md',
+          '/boat/wheels.md'
+        ],
       },            
       '/map.md',
       '/links.md'
     ]
   })
 })
+
