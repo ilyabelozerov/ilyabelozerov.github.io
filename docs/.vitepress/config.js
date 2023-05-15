@@ -22,6 +22,11 @@ export default defineConfig({
     socialLinks: [
       { icon: 'instagram', link: 'https://www.instagram.com/dinghy.fun/' },
       { icon: 'youtube', link: 'https://www.youtube.com' }
-    ]
+    ],
+
+    footer: {
+      message: 'DISCLAIMER: This is NOT an official site of DinghyGo',
+      copyright: 'Copyright © 2023-present by BaBuin Studio'
+    }
   }
 })
