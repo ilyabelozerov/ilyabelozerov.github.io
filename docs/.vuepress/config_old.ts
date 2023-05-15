@@ -4,6 +4,7 @@ import { usePagesPlugin } from 'vuepress-plugin-use-pages'
 import { defaultTheme } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 
+
 export default defineUserConfig({
   lang: 'en-US',
   title: 'DinghyGo Fan',
