@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "DinghyGo Fan"
-  text: "All around DinghyGo boat"
-  tagline: My great project tagline
+  name: "dinghy.fun"
+  text: "DinghyGo Orca 375 Fan"
+  tagline: All around my DinghyGo boat
   image:
     src: ./boatDrawing.png
     alt: DinghyGo  
