@@ -16,7 +16,7 @@ export async function getArticles(path, doSort = false){
 
       return {
         ...file.data,
-        link: `${path}${article}`,
+        link: `${path}${article.replace(/\.[^/.]+$/, "")}`,
         lastModifiedAt: stats.mtime,
         createdAt: stats.ctime
       }
@@ -28,4 +28,8 @@ export async function getArticles(path, doSort = false){
   } else {
     return preparedArticles
   }
+}
+
+export async function saveArticles(data){
+  await fs.writeFile(`${root}/posts.json`, JSON.stringify(data), 'utf-8');
 }

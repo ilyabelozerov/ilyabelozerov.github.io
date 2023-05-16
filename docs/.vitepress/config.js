@@ -1,16 +1,19 @@
 import { defineConfig } from 'vitepress'
-import { getArticles } from '../getPosts.js'
+import { getArticles, saveArticles } from '../getPosts.js'
 
-const boatPosts = await getArticles('/boat/', true)
-const plannedPosts = await getArticles('/planned/', true)
-const tripsPosts = await getArticles('/trips/', true)
+const posts = {
+  boat: await getArticles('/boat/', true),
+  planned: await getArticles('/planned/', true),
+  trips: await getArticles('/trips/', true)
+}
+
+await saveArticles(posts)
 
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
   title: "DinghyGo Fan",
   description: "All around DinghyGo boat",
-
   themeConfig: {
     socialLinks: [
       { icon: 'instagram', link: 'https://www.instagram.com/dinghy.fun/' },
@@ -20,15 +23,15 @@ export default defineConfig({
     sidebar: [
       { text: 'Trips', 
         collapsed: true, 
-        items: tripsPosts.map((item)=>{return {text: item.title, link: item.link}}) 
+        items: posts.trips.map((item)=>{return {text: item.title, link: item.link}}) 
       },
       { text: 'Planned', 
         collapsed: true, 
-        items: plannedPosts.map((item)=>{return {text: item.title, link: item.link}}) 
+        items: posts.planned.map((item)=>{return {text: item.title, link: item.link}}) 
       },
       { text: 'Boat', 
         collapsed: true, 
-        items: boatPosts.map((item)=>{return {text: item.title, link: item.link}}) 
+        items: posts.boat.map((item)=>{return {text: item.title, link: item.link}}) 
       },
       { text: 'Map', link: '/map' },
       { text: 'Useful Links', link: '/links' }
