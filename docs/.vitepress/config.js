@@ -21,7 +21,7 @@ export default defineConfig({
   themeConfig: {
     socialLinks: [
       { icon: 'instagram', link: 'https://www.instagram.com/dinghy.fun/' },
-      { icon: 'youtube', link: 'https://www.youtube.com' }
+      { icon: 'youtube', link: 'https://www.youtube.com/@dinghy-fun' }
     ],
     logo: '/navLogo.png',
     sidebar: [
