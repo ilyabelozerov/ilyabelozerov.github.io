@@ -14,7 +14,7 @@ Places where I have been (or plan to be) with my DinghyGo boat.
                   name="OpenStreetMap">
     </l-tile-layer>
     <l-marker v-for="page in posts.planned" :lat-lng="page.coordinates">
-      <l-icon :icon-url="iconUrl" :icon-size="iconSize" />
+      <l-icon :icon-url="iconUrl" :icon-size="iconSize" :icon-anchor="iconAnchor"/>
       <l-popup>
         <a :href="page.link">
           {{ page.title }}
@@ -65,6 +65,9 @@ Places where I have been (or plan to be) with my DinghyGo boat.
       },
       iconSize(): L.PointExpression {
         return [25, 40];
+      },
+      iconAnchor() {
+        return [12, 40];
       }
     } 
   };
