@@ -14,6 +14,10 @@ await saveArticles(posts)
 export default defineConfig({
   title: "DinghyGo Fan",
   description: "All around DinghyGo boat",
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/navLogo.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/navLogo.png' }]
+  ],
   themeConfig: {
     socialLinks: [
       { icon: 'instagram', link: 'https://www.instagram.com/dinghy.fun/' },
