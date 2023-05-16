@@ -19,7 +19,7 @@ export default defineConfig({
       { icon: 'instagram', link: 'https://www.instagram.com/dinghy.fun/' },
       { icon: 'youtube', link: 'https://www.youtube.com' }
     ],
-
+    logo: '/navLogo.png',
     sidebar: [
       { text: 'Trips', 
         collapsed: true, 
