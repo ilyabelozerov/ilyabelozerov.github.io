@@ -1,23 +1,15 @@
 import { defineConfig } from 'vitepress'
-import fs from 'node:fs/promises'
-import matter from 'gray-matter'
+import { getArticles } from '../getPosts.js'
 
-const root = './docs'
-const boatPosts = (await getArticles(root, '/boat/')).sort((a,b)=>{return a.createdAt - b.createdAt})
-const plannedPosts = (await getArticles(root, '/planned/')).sort((a,b)=>{return a.createdAt - b.createdAt})
-const tripsPosts = (await getArticles(root, '/trips/')).sort((a,b)=>{return a.createdAt - b.createdAt})
+const boatPosts = await getArticles('/boat/', true)
+const plannedPosts = await getArticles('/planned/', true)
+const tripsPosts = await getArticles('/trips/', true)
+
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
   title: "DinghyGo Fan",
   description: "All around DinghyGo boat",
-  customData: {
-    posts: {
-      planned: plannedPosts,
-      trips: tripsPosts,
-      boat: boatPosts
-    }
-  },
 
   themeConfig: {
     socialLinks: [
@@ -38,6 +30,7 @@ export default defineConfig({
         collapsed: true, 
         items: boatPosts.map((item)=>{return {text: item.title, link: item.link}}) 
       },
+      { text: 'Map', link: '/map' },
       { text: 'Useful Links', link: '/links' }
     ],
 
@@ -49,24 +42,3 @@ export default defineConfig({
 })
 
 
-async function getArticles(root, path){
-  const articles = await fs.readdir(root+path)
-
-  return await Promise.all(
-    articles.map(async (article) => {
-  
-      const file = matter.read(`${root}${path}${article}`, {
-        excerpt: false
-      })
-  
-      const stats = await fs.stat(file.path)
-
-      return {
-        ...file.data,
-        link: `${path}${article}`,
-        lastModifiedAt: stats.mtime,
-        createdAt: stats.ctime
-      }
-    })
-  )  
-}

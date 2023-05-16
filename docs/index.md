@@ -14,15 +14,16 @@ hero:
       text: Trips
       link: /trips/testTrip
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Boat
+      link: /boat/unpacking-375
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🧑
+    title: About me
+    details: Hi! I'm Ilya and I have just started with dinghy sailing.
+  - icon: 🗺️
+    title: Map
+    details: See the map of made and planned trips
+    link: /map
 ---
 
