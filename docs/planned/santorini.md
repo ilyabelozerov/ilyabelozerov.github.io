@@ -2,7 +2,7 @@
 title: Santorini
 coordinates: [36.38823, 25.42869]
 ---
-# {{ $frontmatter.title }}
+# Santorini
 
 ![Main image](../img/planned/santorini.jpg)
 

@@ -2,7 +2,7 @@
 title: Lake Tavatui
 coordinates: [57.13458, 60.15608]
 ---
-# {{ $frontmatter.title }}
+# Lake Tavatui
 
 ![Main image](../img/planned/lake-tavatui.jfif)
 

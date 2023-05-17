@@ -1,7 +1,7 @@
 ---
 title: Tiller Extension
 ---
-# {{ $frontmatter.title }}
+# Tiller Extension
 
 ![Tiller Extension](../img/boat/tiller-extension.jpg)
 

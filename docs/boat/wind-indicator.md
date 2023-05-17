@@ -1,7 +1,7 @@
 ---
 title: Wind Indicator
 ---
-# {{ $frontmatter.title }}
+# Wind Indicator
 
 ![Wind Indicator](../img/boat/wind-indicator.jpg)
 

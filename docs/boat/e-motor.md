@@ -1,7 +1,7 @@
 ---
 title: E-Motor
 ---
-# {{ $frontmatter.title }}
+# E-Motor
 
 ![E-Motor](../img/boat/e-motor.jpg)
 

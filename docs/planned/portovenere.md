@@ -2,7 +2,7 @@
 title: Portovenere
 coordinates: [44.05129, 9.83655]
 ---
-# {{ $frontmatter.title }}
+# Portovenere
 
 ![Main image](../img/planned/portovenere.jpg)
 

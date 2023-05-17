@@ -2,7 +2,7 @@
 title: Lake Geneve
 coordinates: [46.42911, 6.88411]
 ---
-# {{ $frontmatter.title }}
+# Lake Geneve
 
 ![Main image](../img/planned/lake-geneve.jpg)
 

@@ -1,7 +1,7 @@
 ---
 title: Ladder
 ---
-# {{ $frontmatter.title }}
+# Ladder
 
 ![Ladder](../img/boat/ladder.jpg)
 

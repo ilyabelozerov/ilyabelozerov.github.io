@@ -2,7 +2,7 @@
 title: Lake Como
 coordinates: [45.97903, 9.26215]
 ---
-# {{ $frontmatter.title }}
+# Lake Como
 
 ![Main image](../img/planned/lake-como.jpg)
 

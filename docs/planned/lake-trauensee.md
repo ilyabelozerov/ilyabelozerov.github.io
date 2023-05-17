@@ -2,7 +2,7 @@
 title: Lake Trauensee
 coordinates: [47.84422, 13.79224]
 ---
-# {{ $frontmatter.title }}
+# Lake Trauensee
 
 ![Main image](../img/planned/lake-trauensee.jpg)
 

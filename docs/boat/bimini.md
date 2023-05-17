@@ -1,7 +1,7 @@
 ---
 title: Bimini
 ---
-# {{ $frontmatter.title }}
+# Bimini
 
 ![Bimini](../img/boat/bimini.jpg)
 

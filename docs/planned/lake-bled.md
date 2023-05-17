@@ -2,7 +2,7 @@
 title: Lake Bled
 coordinates: [46.36845, 14.10802]
 ---
-# {{ $frontmatter.title }}
+# Lake Bled
 
 ![Main image](../img/planned/lake-bled.webp)
 

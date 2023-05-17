@@ -24,6 +24,9 @@ export default defineConfig({
       { icon: 'youtube', link: 'https://www.youtube.com/@dinghy-fun' }
     ],
     logo: '/navLogo.png',
+    search: {
+      provider: 'local'
+    },
     sidebar: [
       { text: 'Trips', 
         collapsed: true, 

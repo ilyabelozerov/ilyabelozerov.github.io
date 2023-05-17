@@ -2,7 +2,7 @@
 title: Gibraltar
 coordinates: [36.00697, -5.60015]
 ---
-# {{ $frontmatter.title }}
+# Gibraltar
 
 ![Main image](../img/planned/gibraltar.jpg)
 

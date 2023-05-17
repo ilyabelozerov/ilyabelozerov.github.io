@@ -2,7 +2,7 @@
 title: Sardinia
 coordinates: [41.23295, 9.40461]
 ---
-# {{ $frontmatter.title }}
+# Sardinia
 
 ![Main image](../img/planned/sardinia.jpeg)
 

@@ -2,7 +2,7 @@
 title: Lake Brienz
 coordinates: [46.75338, 8.03193]
 ---
-# {{ $frontmatter.title }}
+# Lake Brienz
 
 ![Main image](../img/planned/lake-brienz.jpg)
 

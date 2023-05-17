@@ -2,7 +2,7 @@
 title: Calanques
 coordinates: [43.20262, 5.49818]
 ---
-# {{ $frontmatter.title }}
+# Calanques
 
 ![Main image](../img/planned/calanques.jpg)
 

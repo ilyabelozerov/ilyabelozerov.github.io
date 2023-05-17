@@ -1,4 +1,4 @@
 ---
 title: Cup Holders
 ---
-# {{ $frontmatter.title }}
+# Cup Holders

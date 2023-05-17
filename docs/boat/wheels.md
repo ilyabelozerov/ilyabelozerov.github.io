@@ -1,7 +1,7 @@
 ---
 title: Transportation Wheels
 ---
-# {{ $frontmatter.title }}
+# Transportation Wheels
 
 ![Transportation Wheels](../img/boat/wheels.jpg)
 

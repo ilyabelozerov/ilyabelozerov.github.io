@@ -2,7 +2,7 @@
 title: Lake Chiemsee
 coordinates: [47.88290, 12.41937]
 ---
-# {{ $frontmatter.title }}
+# Lake Chiemsee
 
 ![Main image](../img/planned/lake-chiemsee.jpg)
 

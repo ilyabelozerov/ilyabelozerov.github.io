@@ -2,7 +2,7 @@
 title: Lake Bodensee
 coordinates: [47.66101, 9.18128]
 ---
-# {{ $frontmatter.title }}
+# Lake Bodensee
 
 ![Main image](../img/planned/bodensee.jpg)
 

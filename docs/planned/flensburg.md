@@ -2,7 +2,7 @@
 title: Flensburg
 coordinates: [54.81233, 9.46005]
 ---
-# {{ $frontmatter.title }}
+# Flensburg
 
 ![Main image](../img/planned/flensburg.jpg)
 

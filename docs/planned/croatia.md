@@ -2,7 +2,7 @@
 title: Croatia
 coordinates: [42.65013, 18.09090]
 ---
-# {{ $frontmatter.title }}
+# Croatia
 
 ![Main image](../img/planned/croatia.jpg)
 

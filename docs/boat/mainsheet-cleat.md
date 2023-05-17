@@ -1,7 +1,7 @@
 ---
 title: Mainsheet Cleat
 ---
-# {{ $frontmatter.title }}
+# Mainsheet Cleat
 
 ![Mainsheet Cleat](../img/boat/mainsheet-cleat.jpg)
 
