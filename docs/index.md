@@ -15,7 +15,7 @@ hero:
       link: /trips/testTrip
     - theme: alt
       text: Boat
-      link: /boat/unpacking-375
+      link: /boat/2023-06-03-altmuehlsee
 
 features:
   - icon: 🧑
