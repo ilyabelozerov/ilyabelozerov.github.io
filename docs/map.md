@@ -15,16 +15,16 @@ Places where I have been (or plan to be) with my DinghyGo boat.
     </l-tile-layer>
     <l-marker v-for="page in posts.planned" :lat-lng="page.coordinates">
       <l-icon :icon-url="iconUrl" :icon-size="iconSize" :icon-anchor="iconAnchor"/>
-      <l-popup>
-        <a :href="page.link">
-          {{ page.title }}
+      <l-popup v-for="link in page.links">
+        <a :href="link.url">
+          {{ link.title }}
         </a>
       </l-popup>
     </l-marker>
     <l-marker v-for="page in posts.trips" :lat-lng="page.coordinates">
       <l-popup>
-        <a :href="page.link">
-          {{ page.title }}
+        <a v-for="link in page.links" :href="link.url">
+          {{ link.title }} <br>
         </a>
       </l-popup>
     </l-marker>          
@@ -42,6 +42,35 @@ Places where I have been (or plan to be) with my DinghyGo boat.
   import { LMap, LTileLayer, LMarker, LPopup, LIcon } from "@vue-leaflet/vue-leaflet";
   import postsData from './posts.json'
 
+  //Group posts by coordinates
+  let groupByCoordinates = function(arr){
+    return arr.reduce((acc,cur)=>{
+      var found = acc.find(el => JSON.stringify(el.coordinates) == JSON.stringify(cur.coordinates))
+      if(found){
+        found.links.push({
+          title: cur.title,
+          url: cur.link
+        })
+      } else {
+        acc.push({
+          coordinates: cur.coordinates,
+          links: [
+            {
+              title: cur.title,
+              url: cur.link
+            }
+          ]
+        })
+      }
+      return acc
+    }, [])
+  }
+
+  let postsDataGrouped = {
+    trips: groupByCoordinates(postsData.trips),
+    planned: groupByCoordinates(postsData.planned)
+  }
+
   export default {
     components: {
       LMap,
@@ -56,7 +85,7 @@ Places where I have been (or plan to be) with my DinghyGo boat.
         center: [49.41220, 8.70995],
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-        posts: postsData
+        posts: postsDataGrouped
       };
     },
     computed: {
