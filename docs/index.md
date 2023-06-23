@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Trips
-      link: /trips/testTrip
+      link: /trips/2023-06-03-altmuehlsee
     - theme: alt
       text: Boat
-      link: /boat/2023-06-03-altmuehlsee
+      link: /boat/unpacking-375
 
 features:
   - icon: 🧑
