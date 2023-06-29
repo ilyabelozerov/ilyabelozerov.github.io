@@ -25,5 +25,9 @@ features:
     title: Map
     details: See the map of made and planned trips
     link: /map
+  - icon: 🎯
+    title: Targets
+    details: "I decided to set the goals for every year of the possession of my DinghyGo boat. Check them here"
+    link: /targets/2023
 ---
 
