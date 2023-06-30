@@ -12,7 +12,6 @@ postData: 09.06.2023
 ![Main image](../img/trips/2023-06-09-rubber-duggerboard-1.jpg)
 ![Main image](../img/trips/2023-06-09-rubber-duggerboard-2.jpg)
 ![Main image](../img/trips/2023-06-09-wheels-on-boat-large.jpg)
-![Main image](../img/trips/2023-06-09-wheels-on-boat.jpg)
-![Main image](../img/trips/2023-06-09-wheels.jpg)
+
 
 Check this [video](https://www.youtube.com/shorts/6D3QUy0cmJg) on my Youtube Channel.
