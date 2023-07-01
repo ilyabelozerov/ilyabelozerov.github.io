@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Trips
-      link: /trips/testTrip
+      link: /trips/2023-06-03-altmuehlsee
     - theme: alt
       text: Boat
-      link: /boat/2023-06-03-altmuehlsee
+      link: /boat/unpacking-375
 
 features:
   - icon: 🧑
@@ -25,5 +25,9 @@ features:
     title: Map
     details: See the map of made and planned trips
     link: /map
+  - icon: 🎯
+    title: Targets
+    details: "I decided to set the goals for every year of the possession of my DinghyGo boat. Check them here"
+    link: /targets/2023
 ---
 
