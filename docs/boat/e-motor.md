@@ -3,7 +3,7 @@ title: E-Motor
 ---
 # E-Motor
 
-![E-Motor](../img/boat/e-motor.jpg)
+![E-Motor](../img/boat/e-motor.jpg){data-zoomable}
 
 With inflatable boat motors, you can enjoy more on boating than paddling!
 
