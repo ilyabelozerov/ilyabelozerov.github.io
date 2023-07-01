@@ -90,3 +90,10 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+.medium-zoom-image {
+  max-height: 300px;
+}
+
+.medium-zoom-image--opened {
+  z-index: 100;
+}

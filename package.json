@@ -11,6 +11,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "medium-zoom": "^1.0.8",
     "vue": "^3.2.47"
   },
   "type": "module"
