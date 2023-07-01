@@ -5,4 +5,9 @@ postData: 11.06.2023
 ---
 # Erlichsee Lake on 11 June 2023
 
-to be posted...
+![me](../img/trips/2023-06-11-me.jpg)
+
+![boat](../img/trips/2023-06-11-boat.jpg)
+![selfie](../img/trips/2023-06-11-selfie.jpg)
+![sailing](../img/trips/2023-06-11-sailing.jpg)
+
