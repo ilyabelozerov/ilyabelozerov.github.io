@@ -18,11 +18,12 @@ export async function getArticles(path, doSort = false){
         ...file.data,
         link: `${path}${article.replace(/\.[^/.]+$/, "")}`,
         lastModifiedAt: stats.mtime,
-        createdAt: stats.ctime
+        createdAt: file.data.postDate ? new Date(file.data.postDate) : stats.ctime
       }
     })
   )  
 
+  console.log(preparedArticles)
   if (doSort){
     return preparedArticles.sort((a,b)=>{return a.createdAt - b.createdAt})
   } else {

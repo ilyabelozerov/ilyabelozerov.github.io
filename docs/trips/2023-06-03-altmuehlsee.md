@@ -1,7 +1,7 @@
 ---
 title: "[03.06.2023] First Trip on Altmühlsee Lake"
 coordinates: [49.14404, 10.72501]
-postData: 03.06.2023
+postDate: 2023-06-03
 ---
 # First Trip on Altmühlsee Lake
 

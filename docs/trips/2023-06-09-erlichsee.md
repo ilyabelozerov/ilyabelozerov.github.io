@@ -1,7 +1,7 @@
 ---
 title: "[09.06.2023] Erlichsee Lake"
 coordinates: [49.26708, 8.49952]
-postData: 09.06.2023
+postDate: 2023-06-09
 ---
 # Erlichsee Lake on 9 June 2023
 
