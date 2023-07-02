@@ -97,3 +97,7 @@
 .medium-zoom-image--opened {
   z-index: 100;
 }
+
+.vp-doc {
+  text-align: justify;
+}
