@@ -7,4 +7,8 @@ How should one start the first dinghy sailing? Buy a new boat? Read books about 
 
 The first thing to prepare is to buy a flag. I've ordered one even without getting a confirmation that my DinghyGo is on its way.
 
-![Purchase Order](../img/boat/flag-purchase-order.png){data-zoomable}
+![Purchase Order](../img/boat/flag/flag-purchase-order.png){data-zoomable}
+
+And it has arrived:
+
+![Flag](../img/boat/flag/flag.jpg){data-zoomable}
