@@ -41,8 +41,8 @@ export default defineConfig({
         items: posts.boat.map((item)=>{return {text: item.title, link: item.link}}) 
       },
       { text: 'Target 2023', link: '/targets/2023' },
-      { text: 'Map', link: '/map' },
-      { text: 'Useful Links', link: '/links' }
+      { text: 'Target 2024', link: '/targets/2024' },
+      { text: 'Map', link: '/map' }
     ],
 
     footer: {
