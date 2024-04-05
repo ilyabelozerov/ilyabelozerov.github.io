@@ -28,6 +28,6 @@ features:
   - icon: 🎯
     title: Targets
     details: "I decided to set the goals for every year of the possession of my DinghyGo boat. Check them here"
-    link: /targets/2023
+    link: /targets/current
 ---
 

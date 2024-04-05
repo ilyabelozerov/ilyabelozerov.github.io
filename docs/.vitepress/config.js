@@ -40,9 +40,9 @@ export default defineConfig({
         collapsed: true, 
         items: posts.boat.map((item)=>{return {text: item.title, link: item.link}}) 
       },
-      { text: 'Target 2023', link: '/targets/2023' },
-      { text: 'Target 2024', link: '/targets/2024' },
-      { text: 'Map', link: '/map' }
+      { text: 'Map', link: '/map' },
+      { text: 'Current Targets', link: '/targets/current' },
+      { text: 'Targets 2023', link: '/targets/2023' }
     ],
 
     footer: {
